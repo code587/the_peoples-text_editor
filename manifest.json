@@ -30,7 +30,7 @@
   "orientation": "portrait",
   "display": "standalone",
   "start_url": "./",
-  "description": "Keep track of important tasks!",
+  "description": "Edit in Text!",
   "background_color": "#7eb4e2",
   "theme_color": "#7eb4e2"
 }
