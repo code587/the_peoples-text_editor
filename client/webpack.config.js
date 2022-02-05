@@ -27,10 +27,18 @@ module.exports = () => {
         swDest: 'service-worker.js',
       }),
       new WebpackPwaManifest({
-        name: 'Webpack Config',
-        short_name: 'WpConfig',
-        // description: 'Example Webpack Config',
-        // background_color: '#ffffff'
+        name: 'JATE',
+        short_name: 'JATE',
+        description: 'Text editor',
+        start_url: './',
+        publicPath: './',
+        // icons: [
+        //   {
+        //     src: path.resolve('client/src/images/logo.png'),
+        //     sizes: [96, 128, 192, 256, 384, 512],
+        //     destination: path.join('client', 'images'),
+        //   },
+        // ],
     }),
     ],
 
