@@ -32,13 +32,7 @@ module.exports = () => {
         description: 'Text editor',
         start_url: './',
         publicPath: './',
-        // icons: [
-        //   {
-        //     src: path.resolve('client/src/images/logo.png'),
-        //     sizes: [96, 128, 192, 256, 384, 512],
-        //     destination: path.join('client', 'images'),
-        //   },
-        // ],
+        
     }),
     ],
 
