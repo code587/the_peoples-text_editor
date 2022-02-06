@@ -23,16 +23,26 @@ module.exports = () => {
         title: 'JATE'
       }),
       new InjectManifest({
-        swSrc: '../client/src-sw.js',
-        swDest: 'service-worker.js',
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
-        name: 'JATE',
+        fingerprints: false,
+        inject: true,
+        name: 'Just Another Text Editor',
         short_name: 'JATE',
-        description: 'Text editor',
-        start_url: './',
-        publicPath: './',
-        
+        description: 'Takes notes with JavaScript syntax highlighting!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        start_url: '/',
+        publicPath: '/',
+        icons: [
+          {
+            src: path.resolve('src/images/logo.png'),
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
+          },
+        ],
     }),
     ],
 
