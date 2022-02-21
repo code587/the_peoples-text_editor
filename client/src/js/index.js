@@ -23,7 +23,7 @@ if (typeof editor === 'undefined') {
   loadSpinner();
 }
 
-// Make sure service worker is supported by browser
+// Makes sure service worker is supported by browser
 if (navigator.serviceWorker) {
   window.addEventListener('load', () => {
       navigator.serviceWorker
