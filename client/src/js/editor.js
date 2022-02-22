@@ -24,7 +24,7 @@ export default class {
 
     
     // Have setValue stored as to whatever is in indexDb when the jate is ready. If nothing is stored use header.
-    getDb().then((data) => {
+    getAllDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       this.editor.setValue(data || localData || header);
     });

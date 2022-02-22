@@ -28,13 +28,13 @@ export const putDb = async (content) => {
 
 //  Gettng all content from the database
 export const getAllDb = async () => {
-  console.log('GET all from the database');
+  console.log('GET from the database');
   const jateDb = await openDB('jate', 1);
   const tx = jateDb.transaction('jate', 'readonly');
   const stash = tx.objectStore('jate');
-  const request = stash.getAll();
+  const request = stash.get(1);
   const finding = await request;
-  console.log('finding.value', finding);
+  console.log('result.value', finding);
   return finding;
 
 console.error('getAllDb not implemented');
